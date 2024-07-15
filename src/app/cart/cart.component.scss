@@ -1,0 +1,704 @@
+
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+//MIXINS
+@mixin label-features(){
+  text-align: left;
+  font: normal normal 549 10px/12px Montserrat;
+  letter-spacing: 0px;
+  color: #454545;
+  opacity: 1;
+}
+@mixin checkbox-label-features(){
+  text-align: left;
+  font: normal normal 549 12px/15px Montserrat;
+  letter-spacing: 0px;
+  color: #454545;
+  opacity: 1;
+}
+
+@mixin navigation-buttons(){
+  text-align: justify;
+  letter-spacing: 0px;
+  color: #080808;
+  opacity: 1;
+}
+
+
+//FOOTER
+.footer{
+  top: auto;
+  left: 0px;
+  width: 100%;
+  height: 88px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+//STICKY HEADER
+.header{
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3.75rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    //GRID IN HEADER
+    .box1{
+      padding-top: 1.18rem;
+      padding-left: 1.18rem;
+    }
+    display: grid;
+    grid-template-columns: 11fr 1.5fr 3fr 1fr 1fr;
+    column-gap: 10px;
+    //COURSES BUUTON
+    #nav1{
+      @include navigation-buttons();
+      font: normal normal bold 16px/19px Montserrat;
+    }
+    //MY WISHLIST BUTTON
+    #nav2{
+        @include navigation-buttons();
+        font: normal normal 300 16px/19px Montserrat;
+    }
+
+    //HAHEDIN LOGO
+    #logo {
+      width: 128px;
+      height: 41px;
+      opacity: 1;
+    }
+    //CART IMAGE BUUTON
+    #cart{
+      width:1.5rem ;
+      height:1.06rem;
+      top: 19px;
+      left: 1811px;
+
+    }
+    //PROFILE IMAGE BUTTON
+    #user{
+      width:1.5rem ;
+      height:1.5rem;
+
+    }
+}
+.wrapper{
+    padding-top: 1rem;
+    width: 100%;
+    height: 3.875rem;
+
+    /*.box2{
+      border: 1px solid #000;
+    }
+    */
+    //BANNER
+    #banner{
+      background: #0F1317 0% 0% no-repeat padding-box;
+      //background-image: url("src/asset/Mask-Group-1.png");
+      background-position: right;
+
+      color: white;
+      padding-top: 0.8rem;
+      padding-left: 0.8rem;
+      font: normal normal 600 11px/16px Montserrat;
+
+      border-radius: 4px;
+      opacity: 1;
+    }
+    display: grid;
+    grid-template-columns: 140fr 1640fr  140fr ;
+}
+
+//COURSE BAR
+.coursesbar{
+  padding-top: 1.6rem;
+  width: 100%;
+  height: 1.6rem;
+  display: grid;
+  grid-template-columns: 140fr 1210fr 198fr 414fr 140fr ;
+  gap: 5px;
+  .box3{
+     // border: 1px solid #000;
+
+    }
+    //SEARCH BOX
+    #searchbar{
+      background: #FF6738 0% 0% no-repeat padding-box;
+
+    }
+    //SEARCH PLACEHOLDER
+    #placehold{
+      width: 77%;
+      height: 80%;
+      background: #EFF2FF 0% 0% no-repeat padding-box;
+      border-color: white;
+      font: normal normal 300 16px/19px Montserrat;
+
+    }
+
+
+  #course-drop-down{
+
+    border: 1px solid #767676;
+    padding-top: 0.3rem;
+    padding-left: 0.2rem;
+    border-radius: 4px;
+    opacity: 1;
+    font: normal normal 550 8px/11px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+   }
+
+   #all-courses{
+      font: normal normal 600 12px/15px Montserrat;
+     // font: normal normal 600 20px/24px Montserrat;
+      letter-spacing: 0px;
+      padding-left: 0.8rem;
+      color: #0F1317;
+      opacity: 1;
+   }
+
+}
+//CART PAGE CONTENT
+#maincartcontent{
+  padding-top: 1.5rem;
+  .box7{
+    height: 36rem;
+    //border: 1px solid #000;
+  }
+    display: grid;
+    grid-template-columns: 140fr  1210fr 612fr 140fr ;
+    gap:5px;
+    //RECOMMEDED COURSES
+    #recommended{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #E0E0E0;
+      opacity: 1;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+    }
+    //COURSE TITLE
+    #recommended-title{
+      text-align: left;
+      font: normal normal 600 9px/11px Montserrat;
+      letter-spacing: 0px;
+      color: #4E4E4E;
+      opacity: 1;
+    }
+    //RECOMMED COURSE
+    #course-recommended{
+
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #F4F4F4;
+      border-radius: 0px 0px 4px 4px;
+      opacity: 1;
+      .box6{
+        padding-top: 0rem;
+        height: 3 rem;
+
+        //border: 1px solid #000;
+      }
+        display: grid;
+        grid-template-columns:  80fr 350fr 200fr 85fr 106fr 81fr 120fr 95fr ;
+        gap:5px;
+        #cimage{
+          //align-self: center;
+        }
+        #course-title{
+          text-align: left;
+          font: normal normal 600 9px/18px Montserrat;
+          letter-spacing: 0px;
+          color: #080808;
+          opacity: 1;
+        }
+
+        #course-creater{
+
+          text-align: left;
+          font: normal normal 300 8px/10px Montserrat;
+          letter-spacing: 0px;
+          color: #080808;
+          opacity: 1;
+          align-self: center;
+          float:right;
+        }
+
+        #course-star{
+          align-self: center;
+        }
+        #course-discount{
+          text-align: left;
+          text-decoration: line-through;
+          font: normal normal 300 12px/15px Montserrat;
+          letter-spacing: 0px;
+          color: #080808;
+          opacity: 1;
+          align-self: center;
+        }
+        #course-price{
+          text-align: left;
+          font: normal normal bold 12px/15px Montserrat;
+          letter-spacing: 0px;
+          color: #080808;
+          opacity: 1;
+          align-self: center;
+        }
+
+        #course-rect{
+          align-self:center;
+        }
+        #course-path{
+          top: 327px;
+          left: 1328px;
+          width: 6px;
+          height: 12px;
+
+          opacity: 1;
+          align-self: center;
+        }
+        #addcartbutton{
+          width: 100px;
+          height: 30px;
+          background: #FF6738 0% 0% no-repeat padding-box;
+
+          border-radius: 4px;
+          opacity: 1;
+          text-align: left;
+          font: normal normal 600 12px/15px Montserrat;
+          letter-spacing: 0px;
+          color: #FFFFFF;
+          opacity: 1;
+        }
+
+
+
+    }
+
+
+    #cart-course-content{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border: 1px solid #F4F4F4;
+      border-radius: 0px 0px 4px 4px;
+      opacity: 1;
+      .box8{
+        padding-top: 0rem;
+        height: 3 rem;
+        //border: 1px solid #000;
+      }
+        display: grid;
+        grid-template-columns:  80fr 350fr 300fr 172fr 120fr 95fr ;
+        gap:5px;
+
+      #cart-course-image{
+
+      }
+      #cart-course-title{
+        text-align: left;
+        font: normal normal 600 9px/18px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+      }
+      #add-to-wishlist{
+        text-align: left;
+        font: normal normal 600 9px/18px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        align-self: center;
+      }
+      #cart-course-price{
+        text-align: left;
+        font: normal normal bold 12px/15px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        align-self: center;
+      }
+      #cart-delete{
+        align-self: center;
+      }
+      #cart-c{
+        text-align: left;
+        font: normal normal 300 8px/10px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+        align-self: center;
+
+      }
+
+
+    }
+}
+
+#amount{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #E0E0E0;
+  opacity: 1;
+  height: 7rem;
+  #amount-total{
+    text-align: left;
+    font: normal normal 300 12px/13px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+  }
+  #amount-total-number{
+    text-align: left;
+    font: normal normal 600 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+  }
+  #amount-saved-text{
+    text-align: left;
+    font: normal normal 300 12px/13px Montserrat;
+    color: green;
+  }
+  #checkout-button{
+    width: 100%;
+    height: 2rem;
+    background: #FF6738  ;
+    border-radius: 0px;
+    border-color: white;
+    font: normal normal 600 12px/14px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+  }
+
+}
+
+#maincoursecontent{
+  padding-top: 2rem;
+  .box5{
+
+    height: 25rem;
+
+   // border: 1px solid #000;
+
+  }
+    display: grid;
+    grid-template-columns: 140fr  1210fr 612fr 140fr ;
+    gap:5px;
+    #cart-details{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    }
+
+    #course-content{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border: 1px solid #F4F4F4;
+border-radius: 0px 0px 4px 4px;
+opacity: 1;
+      .box6{
+        padding-top: 0rem;
+        height: 3 rem;
+
+        //border: 1px solid #000;
+
+
+
+
+      }
+        display: grid;
+        grid-template-columns:  80fr 350fr 200fr 85fr 106fr 81fr 120fr 95fr ;
+        gap:5px;
+
+
+
+    }
+    #cimage{
+      //align-self: center;
+    }
+    #course-title{
+      text-align: left;
+      font: normal normal 600 9px/18px Montserrat;
+      letter-spacing: 0px;
+      color: #080808;
+      opacity: 1;
+    }
+
+    #course-creater{
+
+      text-align: left;
+      font: normal normal 300 8px/10px Montserrat;
+      letter-spacing: 0px;
+      color: #080808;
+      opacity: 1;
+      align-self: center;
+      float:right;
+    }
+
+    #course-star{
+      align-self: center;
+    }
+    #course-discount{
+      text-align: left;
+      text-decoration: line-through;
+      font: normal normal 300 12px/15px Montserrat;
+      letter-spacing: 0px;
+      color: #080808;
+      opacity: 1;
+      align-self: center;
+    }
+    #course-price{
+      text-align: left;
+      font: normal normal bold 12px/15px Montserrat;
+      letter-spacing: 0px;
+      color: #080808;
+      opacity: 1;
+      align-self: center;
+    }
+
+    #course-rect{
+      align-self:center;
+    }
+    #course-path{
+      top: 327px;
+      left: 1328px;
+      width: 6px;
+      height: 12px;
+
+      opacity: 1;
+      align-self: center;
+    }
+    #addcartbutton{
+      width: 100px;
+      height: 30px;
+      background: #FF6738 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      opacity: 1;
+      text-align: left;
+      font: normal normal 600 12px/15px Montserrat;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      opacity: 1;
+    }
+
+    #cart-details{
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+    }
+    #your-cart-title{
+      text-align: center;
+      font: normal normal 600 16px/20px Montserrat;
+      letter-spacing: 0px;
+      color: #080808;
+      opacity: 1;
+    }
+    #your-cart-content{
+      padding-left: 1rem;
+      background-color: #FFFFFF;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgrey;
+
+
+      .box9{
+        padding-top: 0rem;
+        height: auto;
+        //border: 1px solid #000;
+      }
+        display: grid;
+        grid-template-columns:  20fr 75fr ;
+        gap:5px;
+
+
+      #cart-image{
+        padding-top: 0.8rem;
+        width:60%; height:50%
+      }
+      #cart-image-content{
+        padding-top: 0.8rem;
+        padding-right: 2.0rem;
+        text-align: left;
+        font: normal normal 600 12px/18px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+      }
+      #cart-image-price{
+        padding-right: 1.5rem;
+        text-align: right;
+        font: normal normal bold 18px/20px Montserrat;
+        letter-spacing: 0px;
+        color: #080808;
+        opacity: 1;
+      }
+    }
+
+    #your-cart-bottom{
+      padding-left: 1rem;
+      background-color: #FFFFFF;
+      border-top: 1px solid lightgray;
+      padding-top: 0.4rem;
+
+      .box10{
+        padding-top: 0rem;
+        height: 3.5rem;
+       // border: 1px solid #000;
+      }
+        display: grid;
+        grid-template-columns:  35fr 65fr ;
+        gap:5px;
+
+        #cart-bottom-content{
+          text-align: left;
+          font: normal normal 600 12px/18px Montserrat;
+          letter-spacing: 0px;
+          color: #080808;
+          opacity: 1;
+        }
+        #cart-bottom-price{
+          text-align: left;
+          font: normal normal 600 21px/28px Montserrat;
+          letter-spacing: 0px;
+          color: #080808;
+          opacity: 1;
+        }
+
+        #checkout-head{
+          padding-left: 1rem;
+          padding-top: 1rem;
+
+          #checkout-button{
+            align-self: center;
+            background: #FFFFFF;
+            box-shadow: 0px 3px 6px #00000029;
+            border: white;
+            opacity: 1;
+
+
+            font: normal normal 600 16px/19px Montserrat;
+            letter-spacing: 0px;
+            color: #FF6738;
+            opacity: 1;
+          }
+
+
+        }
+    }
+
+
+
+}
+
+
+
+//PROFILE PAGE CONTENT
+
+.profilecontent{
+  padding-top: 2rem;
+
+  .box3{
+
+    height: auto;
+
+    //border: 1px solid #000;
+  }
+    display: grid;
+    grid-template-columns: 140fr 260fr 1364fr 140fr ;
+    gap:5px;
+
+    #profileimage{
+
+      #userimage{
+        float: left;
+        width: 100%;
+        height: 10rem;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        opacity: 1;
+      }
+
+    }
+
+    #mainprofile{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 1;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .profile-name-inputs{
+          padding-top: 2rem;
+          .box4{
+            height: 3rem;
+           // border: 1px solid #000;
+            @include label-features();
+          }
+        display: grid;
+        grid-template-columns: 1000fr 1000fr 1000fr 400fr ;
+        gap:55px;
+      }
+
+      .userinput{
+
+        display: inline;
+        background: #E0E5F8 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        opacity: 1;
+      }
+      #aboutyourself{
+        @include label-features();
+      }
+      #areaofinterest{
+        @include label-features();
+      }
+      #big-test-area{
+        background: #F6F8FF 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+      #areaofinterest{
+        @include label-features();
+      }
+      .check-box{
+        @include checkbox-label-features();
+      }
+      #dvPassport{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E0E0E0;
+        opacity: 1;
+      }
+      #savebutton{
+        background: #FF6738 0% 0% no-repeat padding-box;
+        border:white;
+        border-radius: 4px;
+        opacity: 1;
+        float: right;
+        width: 5rem;
+        height: 1 rem;
+        letter-spacing: 0px;
+    color: #FFFFFF;
+      }
+      #person{
+        @include label-features();
+      }
+      .radio-choice{
+        @include checkbox-label-features();
+      }
+
+
+    }
+
+
+
+
+}
+

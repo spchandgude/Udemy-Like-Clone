@@ -1,0 +1,35 @@
+<!--BANNER-->
+<div class="wrapper">
+  <div    class="box2"></div>
+  <div    class="box2" id="banner">Shopping Cart</div>
+  <div    class="box2"></div>
+</div>
+<!--COURSEBAR-->
+<div class="coursesbar">
+  <div class="box3"></div>
+  <div class="box3" id="all-courses">{{coursesService.CountOfCourses}} Courses in cart</div>
+</div>
+<!--MAIN CONTENR ON PAGE-->
+<div id="maincartcontent">
+  <div class="box7"></div>
+  <div class="box7">
+      <div id="cartpage"></div>
+      <!--TYPESCRIPT FILE IMPORT TO DISPLAY CART COURSES-->
+      <app-cartcoursecard *ngFor="let course of this.coursesService.getCartCourse()"[course]="course">></app-cartcoursecard>
+      <br><br>
+      <div id="recommended">
+          <div id="recommended-title">Recommeded Courses</div><br>
+           <!--TYPESCRIPT FILE IMPORT TO DISPLAY RECOMMENDED COURSES-->
+           <app-coursecard  *ngFor="let course of this.coursesService.getWishlistCourse()"[course]="course">   </app-coursecard>
+      </div>
+  </div>
+  <div class="box7">
+      <div id="amount">
+          <div id="amount-total"> Total Amount</div><br>
+          <div id="amount-total-number"> Rs {{coursesService.TotalAmount}}/-</div><br>
+          <div id="amount-saved-text"> You have saved Rs {{coursesService.SavedAmount}}/-</div><br>
+          <button id="checkout-button" (click)="onCheckout()" type="button">CHECKOUT</button>
+      </div>
+  </div>
+  <div class="box7"></div>
+</div>

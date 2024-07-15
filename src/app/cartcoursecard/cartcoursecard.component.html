@@ -1,0 +1,9 @@
+
+<div id="cart-course-content">
+  <div  class="box8"><img id="cart-course-image" style="width:80%; height:80%" src="./assets/imgs/course.png"></div>
+  <div id="cart-course-title" class="box8">{{course.title}}<br> <div id="cart-c">{{course.courseCreator}}</div>  </div>
+  <div class="box8"></div>
+  <div id="add-to-wishlist" (click)="onAddToWishlist()" class="box8">  <a id = "nav2" >Move to wishlist</a> </div>
+  <div id="cart-course-price" class="box8">Rs {{course.price}}</div>
+  <div id="cart-delete" class="box8"><img style="width:30%; height:25%"  (click)="onDeleteFromCart()"src="./assets/imgs/del.png"></div>
+  </div>

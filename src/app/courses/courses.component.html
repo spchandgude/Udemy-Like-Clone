@@ -1,0 +1,36 @@
+<!--Coursebar-->
+<div class="coursesbar">
+  <div class="coursesbar-box"></div>
+  <div class="coursesbar-box" id="all-courses">All Courses</div>
+  <div class="coursesbar-box" id="course-drop-down">Course Price
+    <button class="sort-buttons" (click)="sortByPrice()">low to high</button>
+    <button class="sort-buttons" (click)="reverseByPrice()">high to low</button>
+  </div>
+  <div class="coursesbar-box" id="searchbar"><input id="placehold" type="text" placeholder="Search here" name="search"> </div>
+  <div class="coursesbar-box"></div>
+</div>
+<!--BANNER-->
+<div class="wrapper">
+  <div    class="box2"></div>
+  <div    class="box2" id="banner">Discover Latest Courses on <br>React</div>
+  <div    class="box2"></div>
+</div>
+<div id="maincoursecontent">
+<div class="box5"></div>
+<div id="course-content" class="box5">
+  <div>
+  <app-coursecard
+    *ngFor="let course of courses |  paginate: {
+    itemsPerPage: 4,
+    currentPage: p }"
+    [course]="course">
+  </app-coursecard>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>
+<div class="box5"></div>
+<div class="box5"></div>
+</div>
+
+
+

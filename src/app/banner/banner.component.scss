@@ -1,0 +1,27 @@
+.banner{
+  padding-top: 1rem;
+  width: 100%;
+  height: 3.875rem;
+  //BANNER
+  #banner-content{
+    background: #0F1317 0% 0% no-repeat padding-box;
+   // background-image: url("./assets/imgs/applogo.png");
+
+    background-position: right;
+    color: white;
+    padding-top: 0.8rem;
+    padding-left: 0.8rem;
+    font: normal normal 600 11px/16px Montserrat;
+    border-radius: 4px;
+    opacity: 1;
+
+    #banner-img{
+      width:100%;
+      height: 1rem;
+      align-self: center;
+    }
+  }
+  display: grid;
+  grid-template-columns: 140fr 1640fr  140fr ;
+}
+

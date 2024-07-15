@@ -1,0 +1,73 @@
+.coursesbar{
+  padding-top: 1.6rem;
+  width: 100%;
+  height: 1.6rem;
+  display: grid;
+  grid-template-columns: 140fr 1210fr 198fr 414fr 140fr ;
+  gap: 5px;
+}
+#course-card-content{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #F4F4F4;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 1rem;
+  opacity: 1;
+  .box6{
+    padding-top: 0rem;
+    height: 3 rem;
+    //border: 1px solid #000;
+  }
+    display: grid;
+    grid-template-columns:  80fr 350fr 200fr 85fr 106fr 81fr 120fr 95fr ;
+    gap:5px;
+}
+#cimage{
+}
+#course-title{
+  text-align: left;
+  font: normal normal 600 9px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+  opacity: 1;
+}
+#course-creater{
+  text-align: left;
+  font: normal normal 300 8px/10px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+  opacity: 1;
+  align-self: center;
+  float:right;
+}
+#course-star{
+  align-self: center;
+}
+#course-discount{
+  text-align: left;
+  text-decoration: line-through;
+  font: normal normal 300 12px/15px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+  opacity: 1;
+  align-self: center;
+}
+#course-price{
+  text-align: left;
+  font: normal normal bold 12px/15px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+  opacity: 1;
+  align-self: center;
+}
+#course-rect{
+  align-self:center;
+}
+#course-path{
+  top: 327px;
+  left: 1328px;
+  width: 6px;
+  height: 12px;
+  opacity: 1;
+  align-self: center;
+}

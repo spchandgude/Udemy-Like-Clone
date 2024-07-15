@@ -1,0 +1,11 @@
+<!--COURSE CARD-->
+<div id="course-card-content">
+<div class="box6"><img id="cimage" style="width:80%; height:80%" src="./assets/imgs/course.png"></div>
+<div id="course-title" class="box6">{{course.title}}<br> <img  style="width:36%; height:20%" src="./assets/imgs/react.png"> <img style="width:36%; height:20% " src="./assets/imgs/react.png"> </div>
+<div id="course-creater" source="top-padding:1rem" class="box6">{{course.courseCreator}}</div>
+<div id="course-star" class="box6"><img (click)="onAddToWishlist()" src="./assets/imgs/starr.svg"></div>
+<div id="course-price" class="box6"> Rs {{course.price}}</div>
+<div id="course-discount" class="box6"> {{course.discount}}</div>
+<div id="course-rect"class="box6"> <img style="width: 98%; height:98%" (click)="onAddtoCart()" src="./assets/imgs/addcartt.png" > </div>
+<div id="course-path" class="box6"><img src="./assets/imgs/pathh.svg"></div>
+</div>
