@@ -1,0 +1,83 @@
+<div class="profilecontent">
+  <script type="text/javascript">
+    function ShowHideDiv() {
+        var chkYes = document.getElementById("chkYes");
+        var dvPassport = document.getElementById("dvPassport");
+        dvPassport.style.display = chkYes.checked ? "block" : "none";
+    }
+  </script>
+  <div class="box3">
+  </div>
+  <!--PROFILE PHOTO-->
+  <div class="box3" id="profileimage">
+      <img id="userimage" src="./assets/imgs/profilephoto.png">
+  </div>
+  <!-- MAIN PROFILE DETALS-->
+  <div class="box3" id="mainprofile">
+      <div class="profile-name-inputs">
+          <div    class="box4">
+              <label  >Display Name</label>
+              <input class="userinput" type="text" name="dname" placeholder="Display name" ngModel required #nameCtrl="ngModel">
+              <div class="help-group" *ngIf="nameCtrl.invalid">Please enter valid name</div>
+          </div>
+          <div    class="box4" id="banner">
+              <label >First Name</label>
+              <input class="userinput" type="text" name="fname" placeholder="First name" ngModel required #nameCtrl2="ngModel">
+              <div class="help-group" *ngIf="nameCtrl2.invalid">Please enter valid name</div>
+          </div>
+          <div    class="box4">
+              <label>Last Name</label>
+              <input class="userinput" type="text" name="lname" placeholder="Last name">
+          </div>
+      </div>
+      <form id="aboutyourself" name="myForm"  >
+          <label >About yourself</label><br>
+          <textarea id="big-test-area" name="aboutInput" cols="55" rows="7" ng-model="x" maxlength="100"></textarea>
+          <div >You can enter at max 100 characters</div>
+      </form>
+      <br>
+      <div id="areaofinterest" >
+          <label  >Your Area of Interest</label><br>
+          <input type="checkbox" >
+          <label  class="check-box"> Designer</label><br>
+          <input type="checkbox" >
+          <label  class="check-box">Developer</label><br>
+          <input type="checkbox" >
+          <label  class="check-box">Project manager</label><br>
+          <input type="checkbox" >
+          <label  class="check-box">Sales</label><br>
+      </div>
+      <br>
+      <div id="person" >
+          <label  >Are you a Student or Professional</label><br>
+          <label class="radio-choice" for="chkYes">
+              <input type="radio" id="chkNo" class="radioinput" name="chkPassPort" onclick="ShowHideDiv()" />
+              Student
+          </label><br>
+          <label class ="radio-choice" for="chkNo">
+              <input type="radio" id="chkYes" class="radioinput" name="chkPassPort" onclick="ShowHideDiv()" />
+              Professional
+          </label>
+          <br><br>
+          <div id="dvPassport" style="display: none">
+              <br>
+              <label  >How much experience do you have?</label><br><br>
+              <input type="radio" class="radioinput"> 0-5
+              <input type="radio" class="radioinput"> 5-10
+              <input type="radio" class="radioinput"> 10 & above
+              <br>
+              <br>
+              <label  >What is your expertise?</label><br><br>
+              <input type="radio" class="radioinput">Java
+              <input type="radio" class="radioinput">React
+              <input type="radio" class="radioinput">Backend
+              <br><br>
+              <label  >Mention your role</label><br><br>
+              <input class="userinput" type="text"  placeholder="role">
+          </div>
+      </div>
+      <br>
+      <button id="savebutton" type="button">Save</button>
+  </div>
+</div>
+<br><br><br><br>

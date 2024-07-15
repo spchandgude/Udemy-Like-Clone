@@ -1,0 +1,102 @@
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+@mixin label-features(){
+  text-align: left;
+  font: normal normal 549 10px/12px Montserrat;
+  letter-spacing: 0px;
+  color: #454545;
+  opacity: 1;
+}
+@mixin checkbox-label-features(){
+  text-align: left;
+  font: normal normal 549 12px/15px Montserrat;
+  letter-spacing: 0px;
+  color: #454545;
+  opacity: 1;
+}
+.profilecontent{
+  padding-top: 2rem;
+  .box3{
+    height: auto;
+    //border: 1px solid #000;
+  }
+    display: grid;
+    grid-template-columns: 140fr 260fr 1364fr 140fr ;
+    gap:5px;
+
+    #profileimage{
+
+      #userimage{
+        float: left;
+        width: 100%;
+        height: 10rem;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        opacity: 1;
+      }
+
+    }
+    #mainprofile{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 1;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .profile-name-inputs{
+          padding-top: 2rem;
+          .box4{
+            height: 3rem;
+           // border: 1px solid #000;
+            @include label-features();
+          }
+        display: grid;
+        grid-template-columns: 1000fr 1000fr 1000fr 400fr ;
+        gap:55px;
+      }
+      .userinput{
+        display: inline;
+        background: #E0E5F8 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        opacity: 1;
+      }
+      #aboutyourself{
+        @include label-features();
+      }
+      #areaofinterest{
+        @include label-features();
+      }
+      #big-test-area{
+        background: #F6F8FF 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+      #areaofinterest{
+        @include label-features();
+      }
+      .check-box{
+        @include checkbox-label-features();
+      }
+      #dvPassport{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E0E0E0;
+        opacity: 1;
+      }
+      #savebutton{
+        background: #FF6738 0% 0% no-repeat padding-box;
+        border:white;
+        border-radius: 4px;
+        opacity: 1;
+        float: right;
+        width: 5rem;
+        height: 1 rem;
+        letter-spacing: 0px;
+    color: #FFFFFF;
+      }
+      #person{
+        @include label-features();
+      }
+      .radio-choice{
+        @include checkbox-label-features();
+      }
+    }
+  }

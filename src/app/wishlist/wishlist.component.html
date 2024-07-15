@@ -1,0 +1,18 @@
+<!--WISH LIST CARD-->
+<div class="wrapper">
+  <div    class="box2"></div>
+  <div    class="box2" id="banner">Discover Latest Courses on <br>React</div>
+  <div    class="box2"></div>
+</div>
+<div id="maincoursecontent">
+<div class="box5"></div>
+<div id="course-content" class="box5">
+  <div>
+  <!--CARD-->
+  <app-wishlistcard *ngFor="let course of this.coursesService.getWishlistCourse()"[course]="course"></app-wishlistcard>
+  </div>
+</div>
+<div class="box5"></div>
+<div class="box5"></div>
+
+</div>
